@@ -1,0 +1,23 @@
+### Features
+The following table contains a list of features, their implementation status, and notes about them.
+
+| Feature Name       | Implementation Status | Notes                                                                                                                                                                                                             |
+|--------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Registration       | Implemented           | * CAPTCHA parameter is completely ignored.<br/> * Email verification is not present and currently sets it to true by default.                                                                                     |
+| Login              | Implemented           |                                                                                                                                                                                                                   |
+| User Profiles      | Implemented           |                                                                                                                                                                                                                   |
+| User Search        | Implemented           |                                                                                                                                                                                                                   |
+| World Search       | Implemented           |                                                                                                                                                                                                                   |
+| InfoPush           | Implemented (Partial) | The InfoPush system is currently implemented as a mirror of the object stored in Redis. Management is missing.                                                                                                    |
+| Avatar Changing    | Implemented           |                                                                                                                                                                                                                   |
+| Instances          | Implemented           |                                                                                                                                                                                                                   |
+| Instance Discovery | Implemented           | This is an optional service. It has to be deployed alongside the API.                                                                                                                                             |
+| Friendship         | Not Implemented       | Friendship: Users cannot currently friend each-other.                                                                                                                                                             |
+| Presence           | Not Implemented       | Presence: Users cannot currently see where another user is. (Depends on Friendship).                                                                                                                              |
+| Moderation         | Implemented           |                                                                                                                                                                                                                   |
+| Files              | Implemented           |                                                                                                                                                                                                                   |
+| Trust              | Not Implemented       | Trust: Will likely **not** be implemented. There is no reason to have a convoluted "social score" at this time. (Implementation may vary based on server operator; Open-source implementations could be cheated). |
+
+---
+
+All realtime features as of build `1207` should be supported. For more information, please look at the [Naoka](https://gitlab.com/george/naoka-ng) repository.
